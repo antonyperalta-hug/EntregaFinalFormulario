@@ -1,0 +1,106 @@
+body {
+    font-family: 'Cabin', Verdana, Tahoma, sans-serif;
+    background-color: #f5f3f5;
+    color: #1b264f;
+    margin: 0;
+    padding: 0;
+    }
+
+header, footer {
+    background-color: #9ca6ca;
+    padding: 1rem;
+    text-align: center;
+    }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    }
+
+nav a {
+    text-decoration: none;
+    color: #1b264f;
+    font-weight: bold;
+    }
+
+main {
+    padding: 2rem;
+    }
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    }
+
+.card {
+    background-color: #c6ceef;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    }
+
+.card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    }
+
+.grid-reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    }
+
+.reseña {
+    background-color: #e0e6fa;
+    padding: 1rem;
+    border-radius: 8px;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+    }
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #9ca6ca;
+    border-radius: 5px;
+    }
+
+button {
+    background-color: #1b264f;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+button:hover {
+    background-color: #9ca6ca;
+    color: #1b264f;
+    }
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+.productos-grid {
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    }
+}
